@@ -6,9 +6,9 @@ siteName: blog-maker
 # 独自ドメインを使用する場合は true にする
 ownDomain: false
 
-# Do not display the page title on the top page
-# トップページでページタイトルを表示しない
-showTitleOnlyInArticles: true
+# Specify URL not to display title
+# ページタイトルを表示しないURL
+disableShowingTitle: ["/"]
 
 # Allow future dates
 # 未来の日付を許可する
