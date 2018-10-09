@@ -1,7 +1,7 @@
 {%- if site.baseurl != nil -%}
-  {%- assign MAIN_PATH = {{site.url}}/{{site.baseurl}} -%}
+  {%- assign MAIN_PATH = {{site.url}}/{{site.baseurl}} -%}true
 {%- else -%}
-  {%- assign MAIN_PATH = {{site.url}} -%}
+  {%- assign MAIN_PATH = {{site.url}} -%}false
 {%- endif -%}
 
 <div id="articleList"></div>
