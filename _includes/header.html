@@ -2,7 +2,7 @@
     <h1>{{page.title}}  <font size="1"><a href="{{site.data.meta.articleDir}}{{page.path}}">[編集]</a></font></h1>
     
     {% if page.image != nil %}
-        <p><img src="{{site.url}}/assets/images/{{page.image}}" alt="thumb" /></p>
+        <p><img src="{{page.image}}" alt="thumb" /></p>
     {% endif %}
     
     {% if page.date != nil and page.tags != nil %}
