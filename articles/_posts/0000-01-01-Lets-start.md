@@ -13,7 +13,7 @@ hashtags: [blogmaker]
 ## まずはブログをWEBで見れるようにしてみる
 1. プロジェクトを `Folk` する
 
-2. `_config.yml` を開き、以下の行の `blog-maker` を自分のブログの名前に変更する
+2. `_config.yml` を[開き](//github.com/{{gitAddress}}/commits/master/_config.yml)、以下の行の `blog-maker` を自分のブログの名前に変更する
 ```yml
 siteName: blog-maker
 ```
@@ -24,7 +24,7 @@ siteName: blog-maker
 
 4. 緑の枠で ` Your site is published at https://*****.github.io/blog-maker/`<br>
 というようなメッセージが出たら成功。<br>
-表示されたURLが公開先なので、アクセスしてみよう。
+表示されたURLが公開先なので、[アクセス](//{{site.github.owner_name}}.github.io/blog-maker/)してみよう。
 
 ## 新たな記事を書いてみる
 1. `articles/_posts/` を開く
