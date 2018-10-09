@@ -1,7 +1,8 @@
-baseurl: blog-maker
+ownDomain: false
 
 siteName: blog-maker
 articleDir: https://github.com/katai5plate/blog-maker/blob/master/
 username: katai5plate
 showTitleOnlyInArticles: true
 future: true
+
