@@ -1,5 +1,5 @@
 <div class="articleHeader">
-    {% if site.data.config.showTitleOnlyInArticles == true and page.categories contains "articles" %}
+    {% if site.showTitleOnlyInArticles == true and page.categories contains "articles" %}
         <h1>
             {{page.title}}
             <font size="1"><a href="{{site.data.config.articleDir}}{{page.path}}">[編集]</a></font>
