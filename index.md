@@ -11,7 +11,3 @@ image: https://source.unsplash.com/random/400x200
 {% include articleList.html %}
 
 ---
-
-{% for repository in site.github.public_repositories %}
-  * [{{ repository.name }}]({{ repository.html_url }})
-{% endfor %}
