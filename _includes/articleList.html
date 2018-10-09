@@ -1,3 +1,5 @@
+{%- include globalVariables.html -%}
+
 <div id="articleList"></div>
 
 {% assign genres = site.posts | map: "genre" | uniq | sort_natural %}
