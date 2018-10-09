@@ -1,7 +1,7 @@
 {%- assign articleDir = "//github.com/" | append: site.github.owner_name | append: "/" | append: {{site.github.repository_name}} | append: "/blob/master/" -%}
 
 <div class="articleHeader">
-    {% if site.showTitleOnlyInArticles == true and page.categories contains "articles" %}
+    {% if site.disableShowingTitle contains page.url %}{% else %}
         <h1>
             {{page.title}}
             <font size="1"><a href="{{articleDir}}{{page.path}}">[EDIT]</a></font>
