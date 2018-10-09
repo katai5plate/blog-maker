@@ -1,7 +1,7 @@
 <div class="articleHeader">
     <h1>
         {% page.categories[0] == "articles" %}{{page.title}}  {{% endif %}}
-        <font size="1"><a href="{{site.data.meta.articleDir}}{{page.path}}">[編集]</a></font>
+        <font size="1"><a href="{{site.data.config.articleDir}}{{page.path}}">[編集]</a></font>
     </h1>
     
     {% if page.image != nil %}
