@@ -10,7 +10,7 @@
     {% if post.genre == genre %}
 <p>
   <li>
-    <a href="{{site.url}}/{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+    <a href="{{MAIN_PATH}}{{post.url}}">{{post.title}}</a>
     <ul>
       <li>{{post.tags | join ", "}}</li>
     </ul>
