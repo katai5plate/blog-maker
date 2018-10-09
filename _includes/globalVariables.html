@@ -1,0 +1,5 @@
+{%- if site.baseurl != nil -%}
+  {%- assign MAIN_PATH = {{site.url}}/{{site.baseurl}} -%}
+{%- else -%}
+  {%- assign MAIN_PATH = {{site.url}} -%}
+{%- endif -%}
