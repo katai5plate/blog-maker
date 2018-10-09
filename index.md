@@ -8,5 +8,11 @@ image: random
 
 ---
 
+## Tutorial
+- [１．まずはブログをWEBで見れるようにしてみよう](/Tutorial/1)
+- [２．新しい記事を書いてみよう](/Tutorial/2)
+
+---
+
 {% include articleList.html %}
 
