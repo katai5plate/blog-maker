@@ -1,0 +1,1 @@
+{% if site.baseurl != nil %}<a href="{{site.url | append: "/" | append: site.baseurl}}{{include.url}}">{{include.text}}</a>{% else %}<a href="{{site.url}}/{{include.url}}">{{include.text}}</a>{% endif %}
