@@ -1,6 +1,6 @@
 ---
-title: Let's Start
-description: とりあえずスタートする方法
+title: １．まずはブログをWEBで見れるようにしてみよう
+description: ざっくりチュートリアルその１
 image: vista
 genre: Tutorial
 tags: [Basic, StartUp, Usage, 日本語]
