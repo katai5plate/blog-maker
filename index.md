@@ -4,7 +4,7 @@ description: example for blog-maker
 image: random
 ---
 
-### Hello, {{site.github.site.github.owner_name}}'s Blog!
+### Hello, {{site.github.owner_name}}'s Blog!
 
 ---
 
