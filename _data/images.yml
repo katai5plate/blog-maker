@@ -1,8 +1,4 @@
-- name: random
-  url: https://source.unsplash.com/random/400x200
-- name: books
-  url: https://farm8.staticflickr.com/7609/16820286551_a2037459f8_n.jpg
-- name: vista
-  url: https://farm2.staticflickr.com/1856/29245235757_2c30825c9e.jpg
-- name: machine
-  url: https://farm3.staticflickr.com/2039/2520177309_5cc497c1bd.jpg
+random: https://source.unsplash.com/random/400x200
+books: https://farm8.staticflickr.com/7609/16820286551_a2037459f8_n.jpg
+vista: https://farm2.staticflickr.com/1856/29245235757_2c30825c9e.jpg
+machine: https://farm3.staticflickr.com/2039/2520177309_5cc497c1bd.jpg
