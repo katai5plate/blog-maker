@@ -1,1 +1,6 @@
-
+{% assign repo = site.data.config.repositoryName %}
+{%- repo != nil -%}
+foo
+{%- else -%}
+bar
+{%- endif -%}
