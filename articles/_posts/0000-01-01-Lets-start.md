@@ -13,7 +13,7 @@ hashtags: [blogmaker]
 ## まずはブログをWEBで見れるようにしてみる
 1. プロジェクトを `Folk` する
 
-2. `_config.yml` を[開き](//github.com/{{gitAddress}}/commits/master/_config.yml)、以下の行の `blog-maker` を自分のブログの名前に変更する
+2. `_config.yml` を[開き](//github.com/{{gitAddress}}/blob/master/_config.yml)、以下の行の `blog-maker` を自分のブログの名前に変更する
 ```yml
 siteName: blog-maker
 ```
