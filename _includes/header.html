@@ -1,8 +1,10 @@
 <div class="articleHeader">
-    <h1>
-        {% if page.categories[0] == "articles" %}{{page.title}}  {% endif %}
-        <font size="1"><a href="{{site.data.config.articleDir}}{{page.path}}">[編集]</a></font>
-    </h1>
+    {% if site.data.config.showTitleOnlyInArticles == true and page.categories contains "articles" %}
+        <h1>
+            {{page.title}}
+            <font size="1"><a href="{{site.data.config.articleDir}}{{page.path}}">[編集]</a></font>
+        </h1>
+    {% endif %}
     
     {% if page.image != nil %}
         <p><img src="{{page.image}}" alt="thumb" /></p>
