@@ -13,11 +13,16 @@ hashtags: [blogmaker]
 ## まずはブログをWEBで見れるようにしてみる
 1. プロジェクトを `Folk` する
 
-2. `Settings` を開き、<br>
+2. `_config.yml` を開き、以下の行の `blog-maker` を自分のブログの名前に変更する
+```yml
+siteName: blog-maker
+```
+
+3. `Settings` を開き、<br>
 `Options` -> `GitHub Pages` -> `Source` のプルダウンから<br>
 `master branch` を選んで `Save` を押す
 
-3. 緑の枠で ` Your site is published at https://*****.github.io/blog-maker/`<br>
+4. 緑の枠で ` Your site is published at https://*****.github.io/blog-maker/`<br>
 というようなメッセージが出たら成功。<br>
 表示されたURLが公開先なので、アクセスしてみよう。
 
