@@ -40,4 +40,4 @@ hashtags: [ここに, ツイート時の, ハッシュタグ]
 - [こんなふうに]({{site.articleDir}}{{page.path}})
 5. 問題なければ、WEBに反映される
 - 問題ある場合はメールで通知が来たりします
-- [ここ]({{site.articleDir}}/../../commits/master)でコミットが `×` になってたら大抵失敗です
+- [ここ](//github.com/{{site.github.owner_name}}/{{site.github.repository_name}}/commits/master)でコミットが `×` になってたら大抵失敗です
