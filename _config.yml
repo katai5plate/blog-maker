@@ -1,6 +1,11 @@
+# サイトの名前
+siteName: blog-maker
+
+# 独自ドメインを使用する場合は true にする
 ownDomain: false
 
-siteName: blog-maker
+# トップページでページタイトルを表示しない
 showTitleOnlyInArticles: true
-future: true
 
+# 未来の日付を許可する
+future: true
