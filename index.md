@@ -6,7 +6,7 @@ image: https://source.unsplash.com/random/400x200
 
 ### Welcome to my BLOG! yey!
 
-test#{{site.data.images["random"].url}}#
+test#{{site.data.images["random"]}}#
 
 ---
 
