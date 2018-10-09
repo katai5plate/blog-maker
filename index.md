@@ -1,5 +1,5 @@
 ---
-title: {{site.data.meta.siteName}}
+title: Top
 description: example for blog-maker
 image: https://source.unsplash.com/random/400x200
 ---
