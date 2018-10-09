@@ -26,7 +26,7 @@ hashtags: [blogmaker]
 年4桁-月2桁-日2桁-ハイフン区切り題名.md
 ```
 3. 以下のメタデータをファイルの最初に書き込む
-```yaml
+```yml
 ---
 title: ここに記事のタイトル
 description: ここに記事の説明
@@ -37,7 +37,7 @@ hashtags: [ここに, ツイート時の, ハッシュタグ]
 ---
 ```
 4. その下に、好きなようにMarkdown記法でブログを書いて保存する
-```md
+```
 # Heeey, Welcome to My Blog!
 
 I favorite this food.
