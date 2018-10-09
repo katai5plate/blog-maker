@@ -1,15 +1,15 @@
 {%- assign articleDir = "//github.com/" | append: site.github.owner_name | append: "/" | append: {{site.github.repository_name}} | append: "/blob/master/" -%}
 
 <div class="articleHeader">
+    {% if page.image != nil %}
+        <p><img src="{{include.image}}" alt="thumb" /></p>
+    {% endif %}
+    
     {% if site.disableShowingTitle contains page.url %}{% else %}
         <h1>
             {{page.title}}
             <font size="1"><a href="{{articleDir}}{{page.path}}">[EDIT]</a></font>
         </h1>
-    {% endif %}
-    
-    {% if page.image != nil %}
-        <p><img src="{{include.image}}" alt="thumb" /></p>
     {% endif %}
     
     {% if page.date != nil and page.tags != nil %}
