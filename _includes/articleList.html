@@ -12,7 +12,7 @@
   <li>
     {% include insideLink.html url=post.url text=post.title %}
     <ul>
-      <li>{{post.tags | join ", "}}</li>
+      <li>{{post.tags | join: ", "}}</li>
     </ul>
   </li>
 </p>
