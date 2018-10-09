@@ -1,9 +1,9 @@
-<!-- page.image: {{page.image}} -->
 {% if site.data.images contains page.image %}
   {% assign imagePath = site.data.images[image] %}
 {% else %}
   {% assign imagePath = image %}
 {% endif %}
+<!-- imagePath: {{imagePath}} -->
 
 <!DOCTYPE html>
 <html>
