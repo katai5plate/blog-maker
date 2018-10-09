@@ -1,11 +1,15 @@
 # サイトの名前
+# Name of your web site
 siteName: blog-maker
 
 # 独自ドメインを使用する場合は true にする
+# Use your own domain
 ownDomain: false
 
 # トップページでページタイトルを表示しない
+# Do not display the page title on the top page
 showTitleOnlyInArticles: true
 
 # 未来の日付を許可する
+# Allow future dates
 future: true
