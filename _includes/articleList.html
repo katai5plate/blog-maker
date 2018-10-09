@@ -10,7 +10,7 @@
     {% if post.genre == genre %}
 <p>
   <li>
-    <a href="{{post.url}}">{{post.title}}</a>
+    {% include jump.html href={{post.url}} name={{post.title}} %}
     <ul>
       <li>{{post.tags | join ", "}}</li>
     </ul>
