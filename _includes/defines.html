@@ -1,3 +1,4 @@
+<div>
 {% case include.type %}
   {% when "headUrl" %}
     {% if site.baseurl != nil %}
@@ -6,3 +7,4 @@
       {{site.url}}
     {% endif %}
 {% endcase %}
+</div>
