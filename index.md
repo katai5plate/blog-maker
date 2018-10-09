@@ -1,7 +1,7 @@
 ---
 title: {{site.data.meta.siteName}}
 description: example for blog-maker
-image: header/default.jpg
+image: https://source.unsplash.com/random/400x200
 ---
 
 # Welcome to my BLOG! yey!
