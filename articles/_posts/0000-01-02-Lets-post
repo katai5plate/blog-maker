@@ -1,0 +1,37 @@
+---
+title: ２．新しい記事を書いてみよう
+description: ざっくりチュートリアルその２
+image: vista
+genre: Tutorial
+tags: [Basic, StartUp, Usage, 日本語]
+hashtags: [blogmaker]
+---
+{%- assign gitAddress = site.github.owner_name | append: "/" | append: {{site.github.repository_name}} -%}
+
+1. `articles/_posts/` を開く
+
+2. 以下の法則に基づいた名前のファイルを作成
+```
+2020-07-24-tokyo-olympic.md
+年4桁-月2桁-日2桁-ハイフン区切り題名.md
+```
+
+3. 以下のメタデータをファイルの最初に書き込む
+```yml
+---
+title: ここに記事のタイトル
+description: ここに記事の説明
+image: random か books か vista か machine か 任意のURL
+genre: ここに記事のカテゴリ名
+tags: [ここ, に, 記事の, タグ名]
+hashtags: [ここに, ツイート時の, ハッシュタグ]
+---
+```
+
+4. その下に、好きなようにMarkdown記法でブログを書いて保存する
+- [たとえば、こんなふうに](//raw.githubusercontent.com/{{gitAddress}}/master/fixed/hello.md)
+
+5. 問題なければ、WEBに反映される
+- 問題ある場合はメールで通知が来たりします
+- [ここ](//github.com/{{gitAddress}}/commits/master)でコミットが `×` になってたら大抵失敗です
+
