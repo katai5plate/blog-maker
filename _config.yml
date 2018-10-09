@@ -1,5 +1,6 @@
-future: true
-
 baseurl: blog-maker
 
+siteName: blog-maker
+articleDir: https://github.com/katai5plate/blog-maker/blob/master/
 showTitleOnlyInArticles: true
+future: true
