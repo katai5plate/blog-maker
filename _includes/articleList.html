@@ -1,7 +1,7 @@
 {% if site.baseurl != nil %}
-  {% assign mainPath = {{site.url}}/{{site.baseurl}} %}true
+  {% assign mainPath = site.url + "/" + site.baseurl %}
 {% else %}
-  {% assign mainPath = {{site.url}} %}false
+  {% assign mainPath = site.url %}
 {% endif %}
 #{{mainPath}}#
 
