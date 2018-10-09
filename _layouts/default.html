@@ -1,11 +1,17 @@
+{% if site.data.images contains image %}
+  {% assign imagePath = site.data.images[image] %}
+{% else %}
+  {% assign imagePath = image %}
+{% endif %}
+
 <!DOCTYPE html>
 <html>
   <head>
-      {% include meta.html %}
+      {% include meta.html image=imagePath %}
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
-      {% include header.html %}
+      {% include header.html image=imagePath %}
       {{content}}
     </div>
   </body>
