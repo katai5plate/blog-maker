@@ -1,9 +1,9 @@
 {% if site.baseurl != nil %}
-  {% assign MAIN_PATH = {{site.url}}/{{site.baseurl}} %}true
+  {% assign mainPath = {{site.url}}/{{site.baseurl}} %}true
 {% else %}
-  {% assign MAIN_PATH = {{site.url}} %}false
+  {% assign mainPath = {{site.url}} %}false
 {% endif %}
-{{MAIN_PATH}}
+#{{mainPath}}#
 
 <div id="articleList"></div>
 
@@ -17,7 +17,7 @@
     {% if post.genre == genre %}
 <p>
   <li>
-    <a href="{{MAIN_PATH}}{{post.url}}">{{post.title}}</a>
+    <a href="{{mainPath}}{{post.url}}">{{post.title}}</a>
     <ul>
       <li>{{post.tags | join ", "}}</li>
     </ul>
