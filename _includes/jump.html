@@ -1,6 +1,6 @@
 {% assign repo = site.data.config.repositoryName %}
-{%- repo != nil -%}
-foo
+{%- if repo != nil -%}
+<a href="{{repo}}/{{include.href}}">{{include.name}}</a>
 {%- else -%}
-bar
+<a href="{{include.href}}">{{include.name}}</a>
 {%- endif -%}
