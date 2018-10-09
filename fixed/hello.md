@@ -3,6 +3,7 @@ title: Hello, World
 description: My name is truth.
 image: machine
 hashtags: [blogmaker, helloworld]
+permalink: /HelloWorld/index.html
 ---
 
 # yoo‐hoo!
