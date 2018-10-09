@@ -2,7 +2,7 @@
     {% if site.showTitleOnlyInArticles == true and page.categories contains "articles" %}
         <h1>
             {{page.title}}
-            <font size="1"><a href="{{site.articleDir}}{{page.path}}">[編集]</a></font>
+            <font size="1"><a href="{{site.articleDir}}{{page.path}}">[EDIT]</a></font>
         </h1>
     {% endif %}
     
@@ -13,7 +13,7 @@
     {% if page.date != nil and page.tags != nil %}
         <p>
             <small>{{ page.date | date: "%Y/%m/%d" }}<br/>
-            カテゴリ: {{page.genre}} | タグ: {{page.tags | join ", "}}</small>
+            CATEGORY: {{page.genre}} | TAGS: {{page.tags | join: ", "}}</small>
         </p>
     {% endif %}
     <hr/>
