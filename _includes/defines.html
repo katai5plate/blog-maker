@@ -1,0 +1,8 @@
+{% case include.type %}
+  {% when "headUrl" %}
+    {% if site.baseurl != nil %}
+      {{site.url | append: "/" | append: site.baseurl}}
+    {% else %}
+      {{site.url}}
+    {% endif %}
+{% endcase %}
