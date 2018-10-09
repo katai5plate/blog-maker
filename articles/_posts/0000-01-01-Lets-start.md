@@ -37,4 +37,15 @@ hashtags: [ここに, ツイート時の, ハッシュタグ]
 ---
 ```
 4. その下に、好きなようにMarkdown記法でブログを書いて保存する
+```md
+# Heeey, Welcome to My Blog!
+
+I favorite this food.
+
+- Apple
+- Apple
+- Apple
+- Eggplant
+
+```
 5. 問題なければ、WEBに反映される
