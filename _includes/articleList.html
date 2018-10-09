@@ -1,0 +1,22 @@
+<div id="articleList"></div>
+
+{% assign genres = site.posts | map: "genre" | uniq | sort_natural %}
+{% for genre in genres %}
+
+<h2>{{ genre }}</h2>
+
+<ul>
+  {% for post in site.posts %}
+    {% if post.genre == genre %}
+<p>
+  <li>
+    <a href="{{post.url}}">{{post.title}}</a>
+    <ul>
+      <li>{{post.tags | join ", "}}</li>
+    </ul>
+  </li>
+</p>
+    {% endif %}
+  {% endfor %}
+</ul>
+{% endfor %}
