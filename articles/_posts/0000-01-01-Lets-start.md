@@ -5,6 +5,7 @@ image: vista
 genre: Tutorial
 tags: [Basic, StartUp, Usage, 日本語]
 hashtags: [blogmaker]
+permalink: /HelloWorld/index.html
 ---
 
 # ざっくりチュートリアル
