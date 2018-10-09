@@ -9,8 +9,8 @@ image: random
 ---
 
 ## Tutorial
-- [１．まずはブログをWEBで見れるようにしてみよう](/Tutorial/1)
-- [２．新しい記事を書いてみよう](/Tutorial/2)
+1. {% include insideLink.html url="/Tutorial/1" text="まずはブログをWEBで見れるようにしてみよう" %}
+2. {% include insideLink.html url="/Tutorial/2" text="新しい記事を書いてみよう" %}
 
 ---
 
