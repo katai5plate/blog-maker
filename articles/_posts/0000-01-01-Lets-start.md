@@ -6,6 +6,7 @@ genre: Tutorial
 tags: [Basic, StartUp, Usage, 日本語]
 hashtags: [blogmaker]
 ---
+{%- assign gitAddress = site.github.owner_name | append: "/" | append: {{site.github.repository_name}} -%}
 
 # ざっくりチュートリアル
 
@@ -36,9 +37,6 @@ tags: [ここ, に, 記事の, タグ名]
 hashtags: [ここに, ツイート時の, ハッシュタグ]
 ---
 ```
-
-{%- assign gitAddress = site.github.owner_name | append: "/" | append: {{site.github.repository_name}} -%}
-
 4. その下に、好きなようにMarkdown記法でブログを書いて保存する
 - [たとえば、こんなふうに](//raw.githubusercontent.com/{{gitAddress}}/master/fixed/hello.md)
 5. 問題なければ、WEBに反映される
