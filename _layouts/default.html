@@ -11,8 +11,10 @@
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
+      {% include back2top.html %}
       {% include header.html image=imagePath %}
       {{content}}
+      {% include back2top.html %}
     </div>
   </body>
 </html>
