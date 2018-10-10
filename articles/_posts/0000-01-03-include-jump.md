@@ -6,8 +6,8 @@ genre: Tips
 tags: [リファレンス]
 hashtags: [Jekyll]
 ---
-{%- assign esc1 = "{%" -%}
-{%- assign esc2 = "%}" -%}
+{% assign esc1 = "{%" %}
+{% assign esc2 = "%}" %}
 
 ブログの外に向けてリンクを貼りたい場合、Markdownでは以下の書き方を使うことができます
 
@@ -27,7 +27,7 @@ hashtags: [Jekyll]
 
 成功する書き方：
 ```
-{{esc1}}include jump.html url="/blog-maker/HelloWorld" text="Hello!"{{esc2}}
+{{esc1}} include jump.html url="/blog-maker/HelloWorld" text="Hello!" {{esc2}}%}
 ```
 
 これを使用することで、`ownDomain` の値によって以下のURLを先頭に付け足すことができます。
