@@ -1,22 +1,24 @@
-{% if site.ownDomain != true %}
-  {% assign siteUrl = site.url | append: "/" | append: site.github.repository_name %}
-{% else %}
-  {% assign siteUrl = site.url %}
-{% endif %}
+<div class="share">
+  {% if site.ownDomain != true %}
+    {% assign siteUrl = site.url | append: "/" | append: site.github.repository_name %}
+  {% else %}
+    {% assign siteUrl = site.url %}
+  {% endif %}
 
-{% assign shareUrl = siteUrl | append: page.url | url_encode %}
-{% assign twitterUrl = "https://twitter.com/intent/tweet?url=" | append: shareUrl | append: "&text=" | append: page.title | append: "%20-%20" | append: site.siteName %}
-{% assign facebookUrl = "https://www.facebook.com/sharer/sharer.php?u=" | append: shareUrl %}
-{% assign iconSize = 62 %}
+  {% assign shareUrl = siteUrl | append: page.url | url_encode %}
+  {% assign twitterUrl = "https://twitter.com/intent/tweet?url=" | append: shareUrl | append: "&text=" | append: page.title | append: "%20-%20" | append: site.siteName %}
+  {% assign facebookUrl = "https://www.facebook.com/sharer/sharer.php?u=" | append: shareUrl %}
+  {% assign iconSize = 62 %}
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="{{iconSize}}" height="{{iconSize}}">
-  <a xlink:href="{{twitterUrl}}{% if page.hashtags != nil %}&hashtags={{ page.hashtags | join: "%2C" }}{% endif %}">
-    <defs><style>.tw-cls-1{fill:#1da1f2;}.tw-cls-2{fill:#fff;}.tw-cls-3{fill:none;}</style></defs><title>Twitter_Logo_White-on-Blue</title><g id="Dark_Blue" data-name="Dark Blue"><rect class="tw-cls-1" width="400" height="400"/></g><g id="Logo_FIXED" data-name="Logo — FIXED"><path class="tw-cls-2" d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23"/><rect class="tw-cls-3" width="400" height="400"/></g>
-  </a>
-</svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="{{iconSize}}" height="{{iconSize}}">
+    <a xlink:href="{{twitterUrl}}{% if page.hashtags != nil %}&hashtags={{ page.hashtags | join: "%2C" }}{% endif %}">
+      <defs><style>.tw-cls-1{fill:#1da1f2;}.tw-cls-2{fill:#fff;}.tw-cls-3{fill:none;}</style></defs><title>Twitter_Logo_White-on-Blue</title><g id="Dark_Blue" data-name="Dark Blue"><rect class="tw-cls-1" width="400" height="400"/></g><g id="Logo_FIXED" data-name="Logo — FIXED"><path class="tw-cls-2" d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23"/><rect class="tw-cls-3" width="400" height="400"/></g>
+    </a>
+  </svg>
 
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58" width="{{iconSize}}" height="{{iconSize}}">
-  <a xlink:href="{{facebookUrl}}">
-    <defs><style>.fb-cls-1{fill:#4267b2;}.fb-cls-2{fill:#fff;}</style></defs><title>f-ogo_RGB_HEX-58</title><path class="fb-cls-1" d="M54.8,0H3.2A3.2,3.2,0,0,0,0,3.2V54.8A3.2,3.2,0,0,0,3.2,58H31V35.57H23.45V26.79H31V20.33c0-7.49,4.58-11.57,11.26-11.57A64.2,64.2,0,0,1,49,9.1v7.83h-4.6c-3.64,0-4.35,1.72-4.35,4.26v5.59h8.7l-1.13,8.78H40V58H54.8A3.2,3.2,0,0,0,58,54.8V3.2A3.2,3.2,0,0,0,54.8,0Z"/><path id="f" class="fb-cls-2" d="M40,58V35.57h7.57l1.13-8.78H40V21.2c0-2.54.71-4.26,4.35-4.26H49V9.1a64.2,64.2,0,0,0-6.75-.34C35.56,8.76,31,12.84,31,20.33v6.46H23.45v8.78H31V58Z"/>
-  </a>
-</svg>
+  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58" width="{{iconSize}}" height="{{iconSize}}">
+    <a xlink:href="{{facebookUrl}}">
+      <defs><style>.fb-cls-1{fill:#4267b2;}.fb-cls-2{fill:#fff;}</style></defs><title>f-ogo_RGB_HEX-58</title><path class="fb-cls-1" d="M54.8,0H3.2A3.2,3.2,0,0,0,0,3.2V54.8A3.2,3.2,0,0,0,3.2,58H31V35.57H23.45V26.79H31V20.33c0-7.49,4.58-11.57,11.26-11.57A64.2,64.2,0,0,1,49,9.1v7.83h-4.6c-3.64,0-4.35,1.72-4.35,4.26v5.59h8.7l-1.13,8.78H40V58H54.8A3.2,3.2,0,0,0,58,54.8V3.2A3.2,3.2,0,0,0,54.8,0Z"/><path id="f" class="fb-cls-2" d="M40,58V35.57h7.57l1.13-8.78H40V21.2c0-2.54.71-4.26,4.35-4.26H49V9.1a64.2,64.2,0,0,0-6.75-.34C35.56,8.76,31,12.84,31,20.33v6.46H23.45v8.78H31V58Z"/>
+    </a>
+  </svg>
+</div>
