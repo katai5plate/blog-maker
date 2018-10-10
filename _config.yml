@@ -6,8 +6,8 @@ siteName: blog-maker
 # 独自ドメインを使用する場合は true にする
 ownDomain: false
 
-# Specify URL not to display title
-# ページタイトルを表示しないURL
+# Specify URL not to display title & back2top
+# ページタイトルとback2topを表示しないURL
 disableShowingTitle: ["/"]
 
 # Allow future dates
