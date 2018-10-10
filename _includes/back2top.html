@@ -1,1 +1,3 @@
-{% include jump.html url="/" text="TOP" %}
+{%- unless site.disableShowingTitle contains page.url -%}
+  {% include jump.html url="/" text="TOP" %}
+{%- endunless -%}
