@@ -17,17 +17,17 @@ hashtags: [Jekyll]
 しかし、ブログ内の記事や固定ページなどに向けてリンクを貼りたい場合は、<br>
 `_config.yml` の `ownDomain` の値によってURLが異なるため、上記の方法が使えない場合があります。
 
-失敗する書き方：
 ```
 [Hello!](/blog-maker/HelloWorld)
 ```
+- 結果: [Hello!](/blog-maker/HelloWorld)
 
 これを回避するためには、以下のように書きます。
 
-成功する書き方：
 ```
 {{esc}} include jump.html url="/blog-maker/HelloWorld" text="Hello!" %}
 ```
+- 結果: {% include jump.html url="/blog-maker/HelloWorld" text="Hello!" %}
 
 これを使用することで、`ownDomain` の値によって以下のURLを先頭に付け足すことができます。
 
