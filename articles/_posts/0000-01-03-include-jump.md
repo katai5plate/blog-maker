@@ -38,5 +38,5 @@ hashtags: [Jekyll]
 
 |ownDomain|URL|example|
 |-|-|-|
-|true|site.url + site.github.repository_name|`https://username.github.io/reponame/`|
-|false|site.url|`https://username.github.io/`|
+|false|site.url + site.github.repository_name|`https://username.github.io/reponame/`|
+|true|site.url|`https://username.github.io/`|
