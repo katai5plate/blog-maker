@@ -13,6 +13,7 @@ hashtags: [Jekyll]
 ```
 [Google](//www.google.com)
 ```
+- 結果: [Google](//www.google.com)
 
 しかし、ブログ内の記事や固定ページなどに向けてリンクを貼りたい場合は、<br>
 `_config.yml` の `ownDomain` の値によってURLが異なるため、上記の方法が使えない場合があります。
