@@ -3,8 +3,9 @@ title: Top
 description: example for blog-maker
 image: random
 ---
+{%- assign yourName = site.github.owner_name -%}{%- if yourName == "katai5plate" -%}{%- assign yourName = "world" -%}{%- endif -%}
 
-### Hello, {{site.github.owner_name}}!
+### Hello, {{yourName}}!
 Welcome to blog-maker.
 
 ---
