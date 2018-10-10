@@ -7,8 +7,6 @@ image: random
 ### Hello, {{site.github.owner_name}}!
 Welcome to blog-maker.
 
-{% include share.html %}
-
 ---
 
 ## Tutorial
