@@ -1,8 +1,6 @@
 {%- assign articleDir = "//github.com/" | append: site.github.owner_name | append: "/" | append: {{site.github.repository_name}} | append: "/blob/master/" -%}
 
 <div class="articleHeader">
-    {% include back2top.html %}
-    
     {% if page.image != nil %}
         <p><img src="{{include.image}}" alt="thumb" /></p>
     {% endif %}
