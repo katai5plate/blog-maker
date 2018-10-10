@@ -24,9 +24,9 @@ hashtags: [Jekyll]
 これを回避するためには、以下のように書きます。
 
 成功する書き方：
-{%- assign ex = '{% include jump.html url="/blog-maker/HelloWorld" text="Hello!" %}' -%}
+{%- assign esc1 = "{%" -%}{%- assign esc2 = "%}" -%}
 ```
-{{ex}}
+{{esc1}}include jump.html url="/blog-maker/HelloWorld" text="Hello!"{{esc2}}
 ```
 
 これを使用することで、`ownDomain` の値によって以下のURLを先頭に付け足すことができます。
