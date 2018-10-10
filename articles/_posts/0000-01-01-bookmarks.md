@@ -7,6 +7,10 @@ tags: [リファレンス]
 hashtags: [Jekyll, Liquid]
 ---
 
+# blog-maker
+- [公式ドキュメント](https://katai5plate.github.io/blog-maker/)
+- [GitHubプロジェクト](https://github.com/katai5plate/blog-maker)
+
 # Jekyll
 - [ドキュメント](https://jekyllrb-ja.github.io/docs/)
 
