@@ -6,6 +6,8 @@ genre: Tips
 tags: [リファレンス]
 hashtags: [Jekyll]
 ---
+{%- assign esc1 = "{%" -%}
+{%- assign esc2 = "%}" -%}
 
 ブログの外に向けてリンクを貼りたい場合、Markdownでは以下の書き方を使うことができます
 
@@ -24,7 +26,6 @@ hashtags: [Jekyll]
 これを回避するためには、以下のように書きます。
 
 成功する書き方：
-{%- assign esc1 = "{%" -%}{%- assign esc2 = "%}" -%}
 ```
 {{esc1}}include jump.html url="/blog-maker/HelloWorld" text="Hello!"{{esc2}}
 ```
