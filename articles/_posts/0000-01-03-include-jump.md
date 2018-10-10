@@ -24,7 +24,7 @@ hashtags: [Jekyll]
 これを回避するためには、以下のように書きます。
 
 成功する書き方：
-{%- assign ex = "{% include jump.html url=\"/blog-maker/HelloWorld\" text=\"Hello!\" %}" -%}
+{%- assign ex = '{% include jump.html url="/blog-maker/HelloWorld" text="Hello!" %}' -%}
 ```
 {{ex}}
 ```
