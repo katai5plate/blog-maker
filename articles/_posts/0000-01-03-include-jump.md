@@ -18,16 +18,16 @@ hashtags: [Jekyll]
 `_config.yml` の `ownDomain` の値によってURLが異なるため、上記の方法が使えない場合があります。
 
 ```
-[Hello!](/blog-maker/HelloWorld)
+[Hello!](/HelloWorld)
 ```
-- 結果: [Hello!](/blog-maker/HelloWorld)
+- 結果: [Hello!](/HelloWorld)
 
 これを回避するためには、以下のように書きます。
 
 ```
-{{esc}} include jump.html url="/blog-maker/HelloWorld" text="Hello!" %}
+{{esc}} include jump.html url="/HelloWorld" text="Hello!" %}
 ```
-- 結果: {% include jump.html url="/blog-maker/HelloWorld" text="Hello!" %}
+- 結果: {% include jump.html url="/HelloWorld" text="Hello!" %}
 
 これを使用することで、`ownDomain` の値によって以下のURLを先頭に付け足すことができます。
 
